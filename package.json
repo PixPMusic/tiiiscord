@@ -1,0 +1,28 @@
+{
+  "name": "tiiiscord",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "A standalone Discord client for T3 Code",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "start": "node --env-file-if-exists=.env src/cli.ts start",
+    "setup": "node --env-file-if-exists=.env src/cli.ts setup",
+    "doctor": "node --env-file-if-exists=.env src/cli.ts doctor",
+    "smoke": "node --env-file-if-exists=.env src/cli.ts smoke",
+    "test": "node --test test/*.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "discord.js": "14.27.0",
+    "ws": "8.22.0"
+  },
+  "devDependencies": {
+    "@types/node": "26.6.5",
+    "@types/ws": "^8.18.1",
+    "typescript": "^5.9.3"
+  },
+  "license": "MIT"
+}
